@@ -1,0 +1,24 @@
+{
+  "name": "team-boulders",
+  "description": "## PROJECTS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grammerjam/team-boulders.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grammerjam/team-boulders/issues"
+  },
+  "homepage": "https://github.com/grammerjam/team-boulders#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "knex": "^3.1.0"
+  }
+}
