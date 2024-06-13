@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "movie_title": "Shrek",
+    "release_date": "2001-05-16",
+    "genre": "Animation",
+    "production_company": "DreamWorks Animation",
+    "director": "Andrew Adamson",
+    "rating": "PG"
+  },
+  {
+    "id": 2,
+    "movie_title": "How to Lose a Guy in 10 Days",
+    "release_date": "2003-02-07",
+    "genre": "Romantic Comedy",
+    "production_company": "Paramount Pictures",
+    "director": "Donald Petrie",
+    "rating": "PG-13"
+  }
+]

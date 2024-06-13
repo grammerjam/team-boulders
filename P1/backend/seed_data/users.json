@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "first_name": "Brad",
+    "last_name": "Finley",
+    "email": "bfinley01@gmail.com",
+    "username": "bfinley1",
+    "password": "bradfin24"
+  },
+  {
+    "id": "2",
+    "first_name": "Aaron",
+    "last_name": "Rockford",
+    "email": "aaronrockford02@gmail.com",
+    "username": "arockford02",
+    "password": "arock29"
+  },
+  {
+    "id": "3",
+    "first_name": "Brenda",
+    "last_name": "Hill",
+    "email": "brendahill03@gmail.com",
+    "username": "brehill03",
+    "password": "brnhill33"
+  }
+]

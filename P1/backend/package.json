@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "nodemon index.js",
+    "migrate": "npx knex migrate:latest",
+    "migrate:down": "npx knex migrate:down",
+    "migrate:rollback": "npx knex migrate:rollback",
+    "seed": "npx knex seed:run"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
