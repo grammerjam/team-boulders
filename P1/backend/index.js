@@ -3,7 +3,6 @@ require("dotenv").config();
 
 const knex = require("knex");
 const knexFile = require("./knexfile");
-console.log(knexFile);
 const environment = process.env.NODE_ENV || "development";
 
 const db = knex(knexFile[environment]);
@@ -20,11 +19,6 @@ app.use(express.json());
 app.get("/", (req, res) => {
   console.log("Received a get request");
   res.send("Hey, your server is running.");
-});
-
-app.get("/hello", (req, res) => {
-  console.log("I'm saying hello!!");
-  res.send("I'm saying hello back!!!!");
 });
 
 app.post("/api/movies", async (req, res) => {
