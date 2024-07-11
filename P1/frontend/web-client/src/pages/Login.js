@@ -1,19 +1,41 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Login.css'
 
-export default function Login() {
+function Login() {
   return (
     <>
       <div>
-        <h2>Login Page</h2>
+        <span className="login-logo"><img src="assets/logo.svg" alt="logo"/></span>
 
-        {/*Email address*/}
-        {/*Password*/}
+        <form className="login-form">
+          <div>
+            <h1>Login</h1>
 
-        {/*Login to your account*/}
+            <label>
+              <input
+                id="login-email"
+                name="email"
+                type="email"
+                placeholder="Enter Email Address"/>
+            </label>
 
-        {/*Don't have an account? Sign Up*/}
+            <label>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                placeholder="Enter Password"/>
+            </label>
+
+            <button type="submit">Login to your account</button>
+
+            <span className="login-link">Don't have an account? <Link to="/signup">Sign Up</Link></span>
+          </div>
+        </form>
       </div>
     </>
   )
 }
+
+export default Login;

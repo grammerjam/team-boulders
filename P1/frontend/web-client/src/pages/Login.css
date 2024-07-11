@@ -1,0 +1,79 @@
+div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-logo {
+    margin: 50px;
+    align-self: center;
+}
+
+.login-form {
+    align-self: center;
+    background-color: #161D2F;
+    width: 400px;
+    height: 373px;
+    border-radius: 20px;
+}
+.login-form > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+}
+
+.login-link {
+    text-align: center;
+}
+.login-link a {
+    color: #FC4747;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+input[type=email], input[type=password] {
+    display: inline-block;
+    background-color: #161D2F;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #5A698F;
+    width: 100%;
+    padding: 15px;
+    caret-color: #FC4747;
+}
+input:focus {
+    outline: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+button {
+    background-color: #FC4747;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #10141E;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    /* STYLES HERE */
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    /* STYLES HERE */
+}
