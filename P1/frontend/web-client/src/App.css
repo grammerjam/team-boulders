@@ -30,6 +30,17 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
+/*main navigation & header styling (temporary)*/
+.main-header {
+  text-align: center;
+}
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   /* STYLES HERE */
 }

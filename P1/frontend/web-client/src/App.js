@@ -6,10 +6,10 @@ import React from "react";
 function App() {
   return (
     <div>
-      <header>
+      <header className={"main-header"}>
         <h1>Team Boulders | Entertainment Web App</h1>
 
-        <nav>
+        <nav className="main-navigation">
           <Link to="/">Home</Link>
           <br/>
           <Link to="/signup">Sign Up</Link>
