@@ -1,5 +1,5 @@
 {
-  "name": "web-app",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.6"
+    "next": "14.2.7"
   },
   "devDependencies": {
     "postcss": "^8",
