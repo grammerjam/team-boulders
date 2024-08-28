@@ -6,6 +6,16 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'mobile': {'min': '320px', 'max': '767px'},
+      // => @media (min-width: 320px and max-width: 767px) { ... }
+
+      'tablet': {'min': '768px', 'max': '1279px'},
+      // => @media (min-width: 768px and max-width: 1279px) { ... }
+
+      'desktop': '1280px', 
+      // => @media (min-width: 1280px) { ... }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -15,32 +25,8 @@ module.exports = {
       'dark-blue': '#161D2F',
       'white': '#FFFFFF',
     },
-    fontSize: {
-      'sm': ['1.08rem', {
-        lineHeight: '1.3rem',
-        fontWeight: '400',
-      }],
-      'base': ['1.25rem', {
-        lineHeight: '1.57rem',
-        fontWeight: '400',
-      }],
-      'lg': ['1.5rem', {
-        lineHeight: '1.89rem',
-        fontWeight: '400',
-      }],
-      'xl': ['2rem', {
-        lineHeight: '2.52rem',
-        fontWeight: '400',
-      }],
-    },
     extend: {
-      fontSize: {
-        '2xl': ['2.6rem', {
-          lineHeight: '3.36rem',
-          letterSpacing: '-0.04em',
-          fontWeight: '400',
-        }],
-      },
+
     },
   },
   plugins: [],
