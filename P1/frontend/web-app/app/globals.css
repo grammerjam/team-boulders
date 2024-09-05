@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: #10141E;
+  color: #FFFFFF;
+}
+
+/*Custom Font Styling*/
+.body-text-md {
+  font-size: 15px;
+  line-height: 18.9px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+.body-text-sm {
+  font-size: 13px;
+  line-height: 16.38px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.heading-text-xs {
+  font-size: 18px;
+  line-height: 22.68px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.heading-text-sm {
+  font-size: 24px;
+  line-height: 30.24px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.heading-text-md {
+  font-size: 24px;
+  line-height: 30.24px;
+  letter-spacing: 1px;
+  font-weight: 200;
+
+}
+.heading-text-lg {
+  font-size: 32px;
+  line-height: 40.32px;
+  letter-spacing: -0.5px;
+  font-weight: 200;
+}
+
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
