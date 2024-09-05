@@ -6,7 +6,7 @@ import Input from "@/components/form/input";
 import Label from "@/components/form/label";
 import Button from "@/components/form/button";
 
-export default function Login() {
+export default function Signup() {
   return (
     <main className="h-full flex flex-col items-center pt-12">
       <Logo />
@@ -14,7 +14,7 @@ export default function Login() {
       <form
         className="flex flex-col justify-center bg-dark-blue rounded-2xl p-7 mt-12 mobile:w-[327px] tablet:w-[400px] desktop:w-[400px]">
         
-        <Header title="Login" />
+        <Header title="Sign Up" />
 
         <div className="flex flex-col space-y-6 pt-8">
           <div>
@@ -31,18 +31,26 @@ export default function Login() {
               type="password"
               name="password"
               placeholder="Password" />
+					</div>
+					
+					<div>
+            <Label htmlFor="passwordConfirm" />
+            <Input
+              type="password"
+              name="passwordConfirm"
+              placeholder="Repeat Password" />
           </div>
         </div>
 
         <Button
           type="submit"
-          output="Login to your account" />
+          output="Create an account" />
 
-        <span className="block text-center pt-5 body-text-md">Don't have an account? 
+        <span className="block text-center pt-5 body-text-md">Already have an account? 
           <Link
             className="text-red"
-            href="/signup">
-            Sign Up
+            href="/login">
+             Login
           </Link>
         </span>
 
