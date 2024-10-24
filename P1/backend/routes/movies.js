@@ -13,4 +13,32 @@ router.post('/', (req, res) => {
   res.json({ message: "Submitting Movies Search Form & Fetching Results..."});
 });
 
+// ANTHONY CREATED CODE, NEEDS TO BE REVIEWED & UPDATED WHEN CREATING MOVIES CONTROLLER
+// router.post("/", async (req, res) => {
+//   try {
+//     const {
+//       movie_title,
+//       release_date,
+//       genre,
+//       production_company,
+//       director,
+//       rating,
+//     } = req.body;
+
+//     await db("movies").insert({
+//       movie_title,
+//       release_date,
+//       genre,
+//       production_company,
+//       director,
+//       rating,
+//     });
+
+//     res.status(201).json({ message: "Movie added successfully!" });
+//   } catch (err) {
+//     console.error(err);
+//     res.status(500).json({ message: "Failed to add movie" });
+//   }
+// });
+
 module.exports = router;
