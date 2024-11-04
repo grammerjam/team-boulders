@@ -1,6 +1,21 @@
 const express = require('express');
 const router = express.Router();
 
+// test database connection
+const db = require('../db'); // add db connection
+router.get("/users", async (req, res) => {
+	try {
+		const users = await db("boulders.users").select('*');
+		res.json(users);
+	} catch (error) {
+		console.error("Error fetching users data:", error.message);
+		return res.status(500).json({
+			message: "Interval server error",
+			error: process.env.NODE_ENV === "development" ? error.message : "An error occurred. Please try again later.",
+		});
+	}
+});
+
 // SIGN UP PAGE LOGIC
 
 // GET
